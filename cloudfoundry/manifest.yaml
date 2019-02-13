@@ -1,0 +1,9 @@
+---
+applications: 
+  - name: pcf-saml-auth
+    instances: 1
+    memory: 1G
+    disk_quota: 1G
+    path: "../target/pcf-saml-auth.jar"
+    routes:
+      - route: pcf-saml-auth.cfapps.io

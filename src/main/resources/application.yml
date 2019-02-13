@@ -1,0 +1,13 @@
+idp:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+saml:
+  idp:
+    metadata:
+      url: https://dev-254714.okta.com/app/exkapmmvkEKcamnci356/sso/saml/metadata
+  key:
+    path: classpath:omega.jks
+    pass: purple
+    alias: omega
