@@ -47,13 +47,14 @@
 	</bean>
 
 	<!-- Handler deciding where to redirect user after successful login -->
-	<!--
+	
 	<bean id="successRedirectHandler"
 		class="org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler">
 		<property name="defaultTargetUrl" value="/" />
 	</bean>
-	-->
+	<!--
 	<bean id="successRedirectHandler" class="snmaddula.pcf.saml.demo.security.LoginSuccessHandler" />
+	-->
 
 	<!-- Handler deciding where to redirect user after failed login -->
 	<bean id="failureRedirectHandler"
