@@ -17,6 +17,11 @@ public class AppController {
 		return "home";
 	}
 
+	@GetMapping("/profile")
+	public String showProfileView() {
+		return "profile";
+	}
+
 	@ModelAttribute("user")
 	public User username() {
 		try {
@@ -24,6 +29,7 @@ public class AppController {
 			User user = new User();
 			user.setFirstName(cred.getAttributeAsString("First Name"));
 			user.setLastName(cred.getAttributeAsString("Last Name"));
+			user.setFullName(user.getFirstName() +" " + user.getLastName());
 			user.setEmail(cred.getAttributeAsString("Email"));
 			user.setUserType(cred.getAttributeAsString("User Type"));
 			return user;

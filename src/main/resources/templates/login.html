@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>SAML SSO Demo</title>
+<title>SAML SSO Demo App</title>
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -14,7 +14,7 @@
 <body>
 	<div class="container" align="center">
 		<form th:action="${idpDiscoReturnURL}">
-			<h2 align="center">Welcome to SSO Stores!</h2>
+			<h2 align="center">Welcome to My App</h2>
 			<br>
 			<p th:each="idp : ${idps}">
 					<input type="radio" th:name="${idpDiscoReturnParam}"
