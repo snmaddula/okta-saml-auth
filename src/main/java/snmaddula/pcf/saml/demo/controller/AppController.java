@@ -12,12 +12,12 @@ import snmaddula.pcf.saml.demo.dto.User;
 @Controller
 public class AppController {
 
-	@GetMapping("/")
+	@GetMapping("/home")
 	public String showView() {
 		return "home";
 	}
 
-	@GetMapping("/profile")
+	@GetMapping("/")
 	public String showProfileView() {
 		return "profile";
 	}
